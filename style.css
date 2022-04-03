@@ -1,12 +1,44 @@
-* {
-    box-sizing: border-box;
-}
 
 body {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
+    max-width: 1440px;
+    margin: auto;
+    
 }
 
-header {
-    width: 98%;
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.nav_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
     
+}
+
+.button_heberg {
+    display: flex;
+    width: 160px;
+    
+}
+
+
+.button_activites {
+    display: flex;
+    padding-right: 25px;
+    width: 160px;
+}
+
+.logo {
+    width: 90px;
+    margin-right: 25px;
 }

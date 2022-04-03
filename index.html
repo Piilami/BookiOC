@@ -9,24 +9,56 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/83beace393.js" crossorigin="anonymous"></script>
 
     <title>Booki</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="index.html" id="logo"><img src="/assets/logo/Booki.png" alt="logo"></a>
-        <div class="button_heberg">
-          <div class="button_upper_bar_h"></div>
-          <a href="#Hebergements">Hébergements</a>
+        <a href="index.html" id="logo"><img src="/assets/logo/Booki.png" alt="logo" class="logo"></a>
+        <div class="nav_buttons">
+          <div class="button_heberg">
+            <div class="button_upper_bar_h"></div>
+            <a href="#Hebergements">Hébergements</a>
+            </div>
+            <div class="button_activites">
+            <div class="button_upper_bar_a"></div>
+            <a href="#Activites">Activités</a>
         </div>
-        <div class="button_activites">
-          <div class="button_upper_bar_a"></div>
-          <a href="#Activites">Activités</a>
         </div>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class="search_bar">
+          <div class="location_icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <input type="text" placeholder="Marseille, France" class="type_bar">
+          <button class="search_button">Rechercher</button>
+        </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_all">
+        <div class="footer_propos">
+          <h3 class="footer_title">A propos</h3>
+          <a href="#" class="footer_link">Fonctionnement du site</a>
+          <a href="#" class="footer_link">Conditions générales de vente</a>
+          <a href="#" class="footer_link">Données et confidentialité</a>
+        </div>
+        <div class="Footer_herbergement">
+          <h3 class="footer_title">Nos hébergements</h3>
+          <a href="#" class="footer_link">Charte qualité</a>
+          <a href="#" class="footer_link">Soumettre votre hôtel</a>
+        </div>
+        <div class="footer_assist">
+          <h3 class="footer_title">Assistance</h3>
+          <a href="#" class="footer_link">Centre d'aide</a>
+          <a href="#" class="footer_link">Nous contacter</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
