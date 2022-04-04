@@ -53,6 +53,11 @@ h1 {
     font-size: 12px;
 }
 
+.search_bar {
+    display: flex;
+    
+}
+
 ul {
     list-style-type: none;
 }
