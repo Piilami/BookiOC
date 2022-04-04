@@ -62,6 +62,13 @@ ul {
     list-style-type: none;
 }
 
+.filter_li {
+    display: flex;
+    justify-content: space-between;
+    width:  500px;
+
+}
+
 .footer {
     display: flex;
     width: 100%;
