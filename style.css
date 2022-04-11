@@ -1,89 +1,107 @@
-
+html {
+  box-sizing: border-box;
+}
+div {
+  border: 2px solid Black;
+}
 body {
-    font-family: 'Raleway', sans-serif;
-    max-width: 1440px;
-    margin: auto;
-    
+  font-family: "Raleway", sans-serif;
+  max-width: 1440px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+  object-fit: fill;
 }
 
 a {
-    text-decoration: none;
-    color: initial;
+  text-decoration: none;
+  color: initial;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .nav_buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
-    
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
 }
 
 .button_heberg {
-    display: flex;
-    width: 160px;
-    
+  display: flex;
+  width: 160px;
 }
 
-
 .button_activites {
-    display: flex;
-    padding-right: 25px;
-    width: 160px;
+  display: flex;
+  padding-right: 25px;
+  width: 160px;
 }
 
 .logo {
-    width: 90px;
-    margin-right: 25px;
+  width: 90px;
+  margin-right: 25px;
 }
 
 h1 {
-    font-size: 16px;
-    font-weight: bold;
-    
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .subtitle {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .search_bar {
-    display: flex;
-    
+  display: flex;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .filter_li {
-    display: flex;
-    justify-content: space-between;
-    width:  500px;
-
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
 }
 
+.heberg_marseille {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+}
+
+.all_cards_heberg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.heberg_cards {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
 .footer {
-    display: flex;
-    width: 100%;
-    background-color: #F2F2F2;
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
 .footer_all {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .footer_cards {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
