@@ -474,5 +474,12 @@ h1 {
   margin-left: 50px;
 }
 /* Media queries */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
+  .heberg_cards {
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (max-width 992px) {
 }
