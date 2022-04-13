@@ -54,30 +54,32 @@
         </div>
         <div class="filters">
           <h3 class="filters_title">Filtres</h3>
-          <div class="filtre_button">
-            <div class="filtre_icon">
+          <div class="filter_button">
+            <div class="filter_icon">
               <i class="fa-solid fa-money-bill-wave"></i>
             </div>
-            <p class="text_filtre">Économique</p>
+            <p class="text_filter">Économique</p>
           </div>
-          <div class="filtre_button">
-            <div class="filtre_icon">
+          <div class="filter_button">
+            <div class="filter_icon">
               <i class="fa-solid fa-child-reaching"></i>
             </div>
-            <p class="text_filtre">Familial</p>
+            <p class="text_filter">Familial</p>
           </div>
-          <div class="filtre_button">
-            <div class="filtre_icon"><i class="fa-solid fa-heart"></i></div>
-            <p class="text_filtre">Romantique</p>
+          <div class="filter_button">
+            <div class="filter_icon"><i class="fa-solid fa-heart"></i></div>
+            <p class="text_filter">Romantique</p>
           </div>
-          <div class="filtre_button">
-            <div class="filtre_icon"><i class="fa-solid fa-dog"></i></div>
-            <p class="text_filtre">Animaux Autorisé</p>
+          <div class="filter_button">
+            <div class="filter_icon"><i class="fa-solid fa-dog"></i></div>
+            <p class="text_filter">Animaux Autorisé</p>
           </div>
         </div>
         <div class="info">
-          <!--<i class="fa-regular fa-circle-info"></i> -->
-          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <i class="fa-solid fa-info"></i>
+          <p class="text_info">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
         </div>
       </section>
       <section class="all_heberg_marseille">
@@ -103,7 +105,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-duotone fa-star"></i>
+                  <i class="fa-solid fa-star gray"></i>
                 </div>
               </div>
             </a>
@@ -149,7 +151,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
+                  <i class="fa-solid fa-star gray"></i>
                 </div>
               </div>
             </a>
@@ -171,8 +173,8 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
+                  <i class="fa-solid fa-star gray"></i>
+                  <i class="fa-solid fa-star gray"></i>
                 </div>
               </div>
             </a>
@@ -195,7 +197,7 @@
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
                   <i class="fa-solid fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
+                  <i class="fa-solid fa-star gray"></i>
                 </div>
               </div>
             </a>
@@ -223,13 +225,16 @@
               </div>
             </a>
           </div>
+          <div class="more">
+            <button class="more_button">Afficher plus</button>
+          </div>
         </div>
         <div class="most_popular_heber">
-          <div class="heberg_marseille">
-            <h2 class="heberg_title">Les plus populaires</h2>
-            <div class="icon_pop">
-              <i class="fa-solid fa-chart-line-up"></i>
-            </div>
+          <div class="title_pop">
+            <h2 class="popular_main_title">Les plus populaires</h2>
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <div class="all_popular_cards">
             <a href="#">
               <div class="popular_cards">
                 <div class="img_popular">
@@ -238,18 +243,20 @@
                     alt="Hotel le soleil du matin"
                   />
                 </div>
-                <div class="popular_title_card">
-                  <h3 class="popular_title">Hôtel Le Soleil du matin</h3>
-                  <p class="price_popular">
-                    Nuit à partir de <span class="price">128€</span>
-                  </p>
-                </div>
-                <div class="star_popular">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
+                <div class="text_popular">
+                  <div class="popular_title_card">
+                    <h3 class="popular_title">Hôtel Le Soleil du matin</h3>
+                    <p class="price_popular">
+                      Nuit à partir de <span class="price">128€</span>
+                    </p>
+                  </div>
+                  <div class="star_popular">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
                 </div>
               </div>
             </a>
@@ -261,20 +268,22 @@
                     alt="Au coeur de l'eau maison d'hote"
                   />
                 </div>
-                <div class="popular_title_card">
-                  <h3 class="popular_title">
-                    Au coeur de l'eau Chambres d'hôtes
-                  </h3>
-                  <p class="price_popular">
-                    Nuit à partir de <span class="price">71€</span>
-                  </p>
-                </div>
-                <div class="star_popular">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
+                <div class="text_popular">
+                  <div class="popular_title_card">
+                    <h3 class="popular_title">
+                      Au coeur de l'eau Chambres d'hôtes
+                    </h3>
+                    <p class="price_popular">
+                      Nuit à partir de <span class="price">71€</span>
+                    </p>
+                  </div>
+                  <div class="star_popular">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
                 </div>
               </div>
             </a>
@@ -286,18 +295,20 @@
                     alt="Hotel tout bleu et blanc"
                   />
                 </div>
-                <div class="popular_title_card">
-                  <h3 class="popular_title">Hôtel Tout Bleu et Blanc</h3>
-                  <p class="popular_price">
-                    Nuit à partir de <span class="price">68€</span>
-                  </p>
-                </div>
-                <div class="star_popular">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-thin fa-star"></i>
+                <div class="text_popular">
+                  <div class="popular_title_card">
+                    <h3 class="popular_title">Hôtel Tout Bleu et Blanc</h3>
+                    <p class="popular_price">
+                      Nuit à partir de <span class="price">68€</span>
+                    </p>
+                  </div>
+                  <div class="star_popular">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star gray"></i>
+                  </div>
                 </div>
               </div>
             </a>
@@ -305,61 +316,77 @@
         </div>
       </section>
       <section class="all_activity_marseille" id="Activites">
-        <h2 class="activity_marseille">Activités à Marseille</h2>
-        <div class="all_activity">
-          <div class="card_activity_1">
+        <div class="activity_marseille">
+          <h2 class="activity_marseille_title">Activités à Marseille</h2>
+          <div class="all_activity">
             <a href="#">
-              <img
-                src="/assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                alt="Vieux port"
-              />
-              <h3 class="activity_cards_title">Vieux Port</h3>
+              <div class="card_activity_1">
+                <img
+                  src="/assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                  alt="Vieux port"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_cards_title">Vieux Port</h3>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="card_activity_2">
             <a href="#">
-              <img
-                src="/assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                alt="Fort pommegue"
-              />
-              <h3 class="activity_cards_title">Fort de Pommègues</h3>
+              <div class="card_activity_2">
+                <img
+                  src="/assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                  alt="Fort pommegue"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_cards_title">Fort de Pommègues</h3>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="card_activity_3">
             <a href="#">
-              <img
-                src="/assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                alt="Iles Frioul"
-              />
-              <h3 class="activity_cards_title">Iles du Frioul</h3>
+              <div class="card_activity_3">
+                <img
+                  src="/assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                  alt="Iles Frioul"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_cards_title">Iles du Frioul</h3>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="card_activity_4">
             <a href="#">
-              <img
-                src="/assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                alt="Parc national Calanques"
-              />
-              <h3 class="activity_card_title">Parc National des Calanques</h3>
+              <div class="card_activity_4">
+                <img
+                  src="/assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                  alt="Parc national Calanques"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_card_title">
+                    Parc National des Calanques
+                  </h3>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="card_activity_5">
             <a href="#">
-              <img
-                src="/assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                alt="Notre-dame-de-la-garde"
-              />
-              <h3 class="activity_cards_title">Notre-Dame-de-la-Garde</h3>
+              <div class="card_activity_5">
+                <img
+                  src="/assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                  alt="Notre-dame-de-la-garde"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_cards_title">Notre-Dame-de-la-Garde</h3>
+                </div>
+              </div>
             </a>
-          </div>
-          <div class="card_activity_6">
-            <a href="#">
-              <img
-                src="/assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                alt="Parc Longchamp"
-              />
-              <h3 class="activity_cards_title">Parc Longchamp</h3>
-            </a>
+            <div class="card_activity_6">
+              <a href="#">
+                <img
+                  src="/assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                  alt="Parc Longchamp"
+                />
+                <div class="title_activity">
+                  <h3 class="activity_cards_title">Parc Longchamp</h3>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </section>
