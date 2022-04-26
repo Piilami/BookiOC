@@ -229,6 +229,7 @@ h1 {
   padding-bottom: 15px;
 }
 .all_heberg_marseille {
+  position: relative;
   display: flex;
   justify-content: space-around;
 }
@@ -284,15 +285,19 @@ h1 {
   margin-bottom: 5px;
 }
 .more_button {
-  display: none;
-  position: absolute;
-  bottom: 35px;
+  display: flex;
+  background-color: #f2f2f2;
   align-items: center;
+  margin-top: 10px;
   margin-left: 30px;
   width: 100px;
   height: 25px;
   font-weight: 700;
   border: none;
+}
+.more {
+  position: absolute;
+  bottom: 10px;
 }
 .more_button:hover {
   color: #0065fc;
@@ -389,7 +394,7 @@ h1 {
   padding-bottom: 10px;
 }
 .all_activity {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
@@ -510,7 +515,7 @@ footer {
   max-width: 1440px;
 }
 .footer_cards {
-  width: 220px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   margin-left: 30px;
@@ -518,9 +523,11 @@ footer {
 .footer_title {
   padding-bottom: 15px;
   padding-top: 15px;
+  width: fit-content;
 }
 .footer_link {
   padding-bottom: 7px;
+  width: fit-content;
 }
 .footer_link:hover {
   color: #0065fc;
@@ -533,7 +540,7 @@ footer {
     width: 95%;
   }
 }
-@media screen and (max-width: 1117px) {
+@media screen and (max-width: 1118px) {
   .heberg_marseille {
     height: 750px;
   }
@@ -570,6 +577,9 @@ footer {
     flex: none;
     height: 550px;
     margin: 10px;
+    background-color: white;
+  }
+  .more_button {
     background-color: white;
   }
 }
@@ -701,5 +711,13 @@ footer {
   }
   .footer_cards {
     width: 100%;
+  }
+}
+@media screen and (max-width: 345px) {
+  .all_popular_cards {
+    min-width: 0;
+  }
+  .popular_cards {
+    height: fit-content;
   }
 }
