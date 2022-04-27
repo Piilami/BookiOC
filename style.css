@@ -33,12 +33,11 @@ a {
 .size_nav img {
   width: 120px;
   height: 50px;
-  padding-left: 15px;
 }
 #logo {
   width: 120px;
   height: 50px;
-  padding-left: 20px;
+  margin-left: 15px;
 }
 .nav_buttons {
   display: flex;
@@ -153,7 +152,7 @@ h1 {
 }
 .filters_title {
   font-weight: 700;
-  padding-left: 5px;
+  margin-left: 5px;
   width: 55px;
 }
 .filter_all_buttons {
@@ -197,7 +196,7 @@ h1 {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  padding: 0 15px 0 15px;
+  margin: 0 15px 0 15px;
 }
 
 /* infos */
@@ -205,7 +204,7 @@ h1 {
 .info {
   display: flex;
   align-items: center;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 .info .fa-solid {
   display: flex;
@@ -378,8 +377,8 @@ h1 {
   display: flex;
   width: 100%;
   margin-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -411,7 +410,7 @@ h1 {
   height: 500px;
 }
 .title_activity {
-  padding-left: 10px;
+  margin-left: 10px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -556,12 +555,12 @@ footer {
   margin-right: 30%;
 }
 .footer_title {
-  padding-bottom: 15px;
-  padding-top: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   width: fit-content;
 }
 .footer_link {
-  padding-bottom: 7px;
+  margin-bottom: 7px;
   width: fit-content;
 }
 .footer_link:hover {
@@ -708,7 +707,6 @@ footer {
     width: 95%;
   }
   .size_nav {
-    padding: 0;
     height: 130px;
     align-items: center;
     flex-direction: column;
