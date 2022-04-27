@@ -663,7 +663,7 @@ footer {
     margin-left: 0;
   }
   .activity_marseille_title {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .title_pop {
     width: 100%;
@@ -681,6 +681,7 @@ footer {
     height: 550px;
     margin: 10px;
     background-color: white;
+    padding: 40px 0 0 0;
   }
   .more_button {
     background-color: white;
@@ -810,22 +811,23 @@ footer {
   .heberg_marseille {
     height: 1400px;
   }
-
+  .footer {
+    justify-content: flex-start;
+  }
   .footer_all {
     width: auto;
     flex-direction: column;
+    margin-bottom: 10px;
   }
-
-  .activity_marseille_title {
-    margin-left: 45px;
+  .footer_cards {
+    margin-left: 20px;
   }
   .all_activity {
     height: 1300px;
     align-content: center;
   }
   .all_activity a {
-    width: 87%;
-    min-width: 0;
+    width: 95%;
   }
   .card_activity_1 {
     width: 100%;
@@ -854,6 +856,9 @@ footer {
 }
 
 @media screen and (max-width: 345px) {
+  .popular_main_title {
+    margin-left: 0;
+  }
   .all_popular_cards {
     min-width: 0;
   }
@@ -871,6 +876,6 @@ footer {
     margin-left: 20px;
   }
   .footer_cards {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }
