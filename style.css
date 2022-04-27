@@ -552,6 +552,9 @@ footer {
   flex-direction: column;
   margin-left: 30px;
 }
+.footer_assist {
+  margin-right: 30%;
+}
 .footer_title {
   padding-bottom: 15px;
   padding-top: 15px;
@@ -655,6 +658,12 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
+  }
+  .heberg_title {
+    margin-left: 0;
+  }
+  .activity_marseille_title {
+    margin-left: 30px;
   }
   .title_pop {
     width: 100%;
@@ -857,6 +866,9 @@ footer {
   }
   .heberg_title {
     margin-left: 0;
+  }
+  .activity_marseille_title {
+    margin-left: 20px;
   }
   .footer_cards {
     margin-left: 5px;
