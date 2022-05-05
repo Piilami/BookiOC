@@ -24,15 +24,51 @@ a {
 img {
   object-fit: cover;
 }
-
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+}
+.flexCenteralign {
+  display: flex;
+  align-items: center;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexBetweenColumn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.flexSpaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+.flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* Header et Navbar */
 
 nav {
   width: 100%;
   height: 110px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 nav img {
   width: 120px;
@@ -54,17 +90,10 @@ nav img {
   width: 100%;
   height: 100%;
   font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* première section title & search bar */
 
-.all_search_bar {
-  display: flex;
-  flex-direction: column;
-}
 h1 {
   font-size: 20px;
   font-weight: bold;
@@ -74,14 +103,9 @@ h1 {
   margin-bottom: 20px;
 }
 .search_bar {
-  display: flex;
-
   height: 50px;
 }
 .location_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f2f2f2;
   width: 50px;
   min-width: 50px;
@@ -122,8 +146,6 @@ h1 {
 .filters {
   max-width: 900px;
   margin: 25px 0 25px 0;
-  display: flex;
-  align-items: center;
 }
 .filters_title {
   font-weight: 700;
@@ -132,12 +154,8 @@ h1 {
 }
 .filter_all_buttons {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
 }
 .filter_button {
-  display: flex;
-  align-items: center;
   border: solid 2px #f2f2f2;
   border-radius: 30px;
   margin: 5px;
@@ -156,9 +174,6 @@ h1 {
   cursor: pointer;
 }
 .filter_icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 30px;
   min-width: 50px;
   height: 50px;
@@ -167,16 +182,12 @@ h1 {
 }
 .text_filter {
   font-weight: 700;
-  display: flex;
-  justify-content: center;
   margin: 0 15px 0 15px;
 }
 
 /* infos */
 
 .info {
-  display: flex;
-  align-items: center;
   margin-bottom: 25px;
 }
 .info .fa-solid {
@@ -204,12 +215,8 @@ h1 {
 }
 .all_heberg_marseille {
   position: relative;
-  display: flex;
-  justify-content: space-around;
 }
 .heberg_marseille {
-  display: flex;
-  flex-direction: column;
   flex: 2;
   height: 580px;
   background-color: #f2f2f2;
@@ -218,8 +225,6 @@ h1 {
   padding: 40px 20px 40px 20px;
 }
 .most_popular_heber {
-  display: flex;
-  flex-direction: column;
   flex: 1;
   height: 580px;
   background-color: #f2f2f2;
@@ -227,8 +232,6 @@ h1 {
   padding: 40px 20px 20px 20px;
 }
 .all_cards_heberg {
-  display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
   height: 450px;
@@ -257,9 +260,7 @@ h1 {
   margin: 0 0 5px 10px;
 }
 .more_button {
-  display: flex;
   background-color: #f2f2f2;
-  align-items: center;
   margin: 10px 0 0 30px;
   height: 25px;
   font-weight: 700;
@@ -280,11 +281,6 @@ h1 {
 .price {
   font-weight: 600;
 }
-.title_pop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .title_pop .fa-solid {
   font-size: 20px;
   margin-right: 20px;
@@ -294,16 +290,11 @@ h1 {
   margin: 0 0 10px 20px;
 }
 .all_popular_cards {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
   width: 100%;
   min-width: 300px;
   height: 100%;
 }
 .all_popular_cards a {
-  display: flex;
   width: 100%;
 }
 .popular_cards img {
@@ -322,15 +313,8 @@ h1 {
 .popular_cards:hover {
   box-shadow: #0065fc 5px 5px 5px 0;
 }
-.popular_title_card {
-  display: flex;
-  flex-direction: column;
-}
 .text_popular {
-  display: flex;
   margin: 10px 0 15px 10px;
-  justify-content: space-between;
-  flex-direction: column;
 }
 .star_popular {
   color: #0065fc;
@@ -341,20 +325,13 @@ h1 {
 
 /* Section 3 activité */
 
-.activity_marseille {
-  display: flex;
-  flex-direction: column;
-}
 .activity_marseille_title {
   font-size: 20px;
   margin: 50px 0 10px 0;
 }
 .all_activity {
-  display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-content: space-between;
-  justify-content: space-around;
   margin-bottom: 50px;
   height: 500px;
 }
@@ -365,9 +342,7 @@ h1 {
   align-items: center;
 }
 .cards_activity_all {
-  display: flex;
   justify-content: center;
-  flex-direction: column;
   width: 300px;
   min-width: 220px;
   border-radius: 15px;
@@ -412,9 +387,6 @@ h1 {
 footer {
   width: 100%;
   background: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: auto;
 }
 
@@ -425,9 +397,7 @@ footer {
   max-width: 1440px;
 }
 .footer_cards {
-  width: fit-content;
   display: flex;
-  flex-direction: column;
   margin-left: 30px;
 }
 .footer_assist {
