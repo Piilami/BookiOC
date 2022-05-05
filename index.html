@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
@@ -25,28 +24,28 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="flexBetweenCenter">
         <a href="index.html"
           ><img src="assets/logo/Booki.png" alt="logo" class="logo"
         /></a>
         <div class="nav_buttons_both">
           <div class="button_nav">
-            <a href="#Hebergements">Hébergements</a>
+            <a href="#Hebergements" class="flexCenter">Hébergements</a>
           </div>
           <div class="button_nav">
-            <a href="#Activites">Activités</a>
+            <a href="#Activites" class="flexCenter">Activités</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="all_search_bar">
+      <section class="all_search_bar flexcolumn">
         <div class="main_title">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
           <p class="subtitle">En plein centre ville ou en pleine nature</p>
         </div>
-        <div class="search_bar">
-          <div class="location_icon">
+        <div class="search_bar flexStart">
+          <div class="location_icon flexCenter">
             <i class="fa-solid fa-location-dot"></i>
           </div>
           <input type="text" placeholder="Marseille, France" class="type_bar" />
@@ -55,42 +54,46 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-        <div class="filters">
+        <div class="filters flexCenteralign">
           <h3 class="filters_title">Filtres</h3>
-          <div class="filter_all_buttons">
-            <div class="filter_button">
-              <div class="filter_icon">
+          <div class="filter_all_buttons flexSpaceAround">
+            <div class="filter_button flexCenteralign">
+              <div class="filter_icon flexCenter">
                 <i class="fa-solid fa-money-bill-wave"></i>
               </div>
-              <p class="text_filter">Économique</p>
+              <p class="text_filter flexCenteralign">Économique</p>
             </div>
-            <div class="filter_button">
-              <div class="filter_icon">
+            <div class="filter_button flexCenteralign">
+              <div class="filter_icon flexCenter">
                 <i class="fa-solid fa-child-reaching"></i>
               </div>
-              <p class="text_filter">Familial</p>
+              <p class="text_filter flexCenteralign">Familial</p>
             </div>
-            <div class="filter_button">
-              <div class="filter_icon"><i class="fa-solid fa-heart"></i></div>
-              <p class="text_filter">Romantique</p>
+            <div class="filter_button flexCenteralign">
+              <div class="filter_icon flexCenter">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <p class="text_filter flexCenteralign">Romantique</p>
             </div>
-            <div class="filter_button">
-              <div class="filter_icon"><i class="fa-solid fa-dog"></i></div>
-              <p class="text_filter">Animaux Autorisé</p>
+            <div class="filter_button flexCenteralign">
+              <div class="filter_icon flexCenter">
+                <i class="fa-solid fa-dog"></i>
+              </div>
+              <p class="text_filter flexCenteralign">Animaux Autorisé</p>
             </div>
           </div>
         </div>
-        <div class="info">
+        <div class="info flexCenteralign">
           <i class="fa-solid fa-info"></i>
           <p class="text_info">
             Plus de 500 logements sont disponibles dans cette ville
           </p>
         </div>
       </section>
-      <section class="all_heberg_marseille">
-        <div class="heberg_marseille" id="Hebergements">
+      <section class="all_heberg_marseille flexSpaceAround">
+        <div class="heberg_marseille flexcolumn" id="Hebergements">
           <h2 class="heberg_title">Hébergements à Marseille</h2>
-          <div class="all_cards_heberg">
+          <div class="all_cards_heberg flexEvenly">
             <div class="heberg_cards">
               <a href="#">
                 <div class="Img_heberg">
@@ -235,25 +238,25 @@
             </div>
           </div>
           <div class="more">
-            <button class="more_button">Afficher plus</button>
+            <button class="more_button flexCenteralign">Afficher plus</button>
           </div>
         </div>
-        <div class="most_popular_heber">
-          <div class="title_pop">
+        <div class="most_popular_heber flexcolumn">
+          <div class="title_pop flexBetweenCenter">
             <h2 class="popular_main_title">Les plus populaires</h2>
             <i class="fa-solid fa-chart-line"></i>
           </div>
-          <div class="all_popular_cards">
+          <div class="all_popular_cards flexColumnCenter flexSpaceAround">
             <div class="popular_cards">
-              <a href="#">
+              <a href="#" class="flexStart">
                 <div class="img_popular">
                   <img
                     src="assets/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="Hotel le soleil du matin"
                   />
                 </div>
-                <div class="text_popular">
-                  <div class="popular_title_card">
+                <div class="text_popular flexBetweenColumn">
+                  <div class="flexcolumn">
                     <h3 class="popular_title">Hôtel Le Soleil du matin</h3>
                     <p class="price_popular">
                       Nuit à partir de <span class="price">128€</span>
@@ -271,15 +274,15 @@
             </div>
 
             <div class="popular_cards">
-              <a href="#">
+              <a href="#" class="flexStart">
                 <div class="img_popular">
                   <img
                     src="assets/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="Au coeur de l'eau maison d'hote"
                   />
                 </div>
-                <div class="text_popular">
-                  <div class="popular_title_card">
+                <div class="text_popular flexBetweenColumn">
+                  <div class="flexcolumn">
                     <h3 class="popular_title">
                       Au coeur de l'eau Chambres d'hôtes
                     </h3>
@@ -299,15 +302,15 @@
             </div>
 
             <div class="popular_cards">
-              <a href="#">
+              <a href="#" class="flexStart">
                 <div class="img_popular">
                   <img
                     src="assets/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                     alt="Hotel tout bleu et blanc"
                   />
                 </div>
-                <div class="text_popular">
-                  <div class="popular_title_card">
+                <div class="text_popular flexBetweenColumn">
+                  <div class="flexcolumn">
                     <h3 class="popular_title">Hôtel Tout Bleu et Blanc</h3>
                     <p class="popular_price">
                       Nuit à partir de <span class="price">68€</span>
@@ -327,75 +330,75 @@
         </div>
       </section>
       <section class="all_activity_marseille" id="Activites">
-        <div class="activity_marseille">
+        <div class="flexcolumn">
           <h2 class="activity_marseille_title">Activités à Marseille</h2>
-          <div class="all_activity">
+          <div class="all_activity flexSpaceAround flexcolumn">
             <a href="#">
-              <div class="card_activity_1 cards_activity_all">
+              <div class="card_activity_1 flexcolumn cards_activity_all">
                 <img
                   src="assets/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                   alt="Vieux port"
                   class="img_activity_1"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3>Vieux Port</h3>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="card_activity_2 cards_activity_all">
+              <div class="card_activity_2 cards_activity_all flexcolumn">
                 <img
                   src="assets/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                   alt="Fort pommegue"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3>Fort de Pommègues</h3>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="card_activity_3 cards_activity_all">
+              <div class="card_activity_3 cards_activity_all flexcolumn">
                 <img
                   src="assets/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                   alt="Iles Frioul"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3 class="activity_cards_title">Iles du Frioul</h3>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="card_activity_1 cards_activity_all">
+              <div class="card_activity_1 cards_activity_all flexcolumn">
                 <img
                   src="assets/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                   alt="Parc national Calanques"
                   class="img_activity_1"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3>Parc National des Calanques</h3>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="card_activity_5 cards_activity_all">
+              <div class="card_activity_5 cards_activity_all flexcolumn">
                 <img
                   src="assets/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                   alt="Notre-dame-de-la-garde"
                   class="img_activity_2"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3>Notre-Dame-de-la-Garde</h3>
                 </div>
               </div>
             </a>
             <a href="#">
-              <div class="card_activity_5 cards_activity_all">
+              <div class="card_activity_5 cards_activity_all flexcolumn">
                 <img
                   src="assets/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                   alt="Parc Longchamp"
                   class="img_activity_2"
                 />
-                <div class="title_card_activity">
+                <div class="title_card_activity flexCenteralign">
                   <h3>Parc Longchamp</h3>
                 </div>
               </div>
@@ -404,20 +407,20 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="flexCenter">
       <div class="footer_all">
-        <div class="footer_cards">
+        <div class="footer_cards flexcolumn">
           <h3 class="footer_title">A propos</h3>
           <a href="#" class="footer_link">Fonctionnement du site</a>
           <a href="#" class="footer_link">Conditions générales de vente</a>
           <a href="#" class="footer_link">Données et confidentialité</a>
         </div>
-        <div class="footer_cards">
+        <div class="footer_cards flexcolumn">
           <h3 class="footer_title">Nos hébergements</h3>
           <a href="#" class="footer_link">Charte qualité</a>
           <a href="#" class="footer_link">Soumettre votre hôtel</a>
         </div>
-        <div class="footer_cards footer_assist">
+        <div class="footer_cards footer_assist flexcolumn">
           <h3 class="footer_title">Assistance</h3>
           <a href="#" class="footer_link">Centre d'aide</a>
           <a href="#" class="footer_link">Nous contacter</a>
