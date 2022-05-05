@@ -1,3 +1,4 @@
+/* général */
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
@@ -20,53 +21,36 @@ a {
   text-decoration: none;
   color: initial;
 }
+img {
+  object-fit: cover;
+}
 
 /* Header et Navbar */
 
-.size_nav {
+nav {
   width: 100%;
   height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.size_nav img {
-  width: 120px;
-  height: 50px;
-}
-#logo {
+nav img {
   width: 120px;
   height: 50px;
   margin-left: 15px;
 }
-.nav_buttons {
+.nav_buttons_both {
   display: flex;
 }
-.button_heberg {
+.button_nav {
   width: 160px;
   height: 110px;
 }
-.button_heberg a:hover {
+.button_nav a:hover {
   border-top: solid 3px #0065fc;
   color: #0065fc;
 }
-.button_heberg a {
-  width: 100%;
-  height: 100%;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.button_activites {
-  width: 160px;
-  height: 110px;
-}
-.button_activites a:hover {
-  border-top: solid 3px #0065fc;
-  color: #0065fc;
-}
-.button_activites a {
+.button_nav a {
   width: 100%;
   height: 100%;
   font-weight: 600;
@@ -79,10 +63,7 @@ a {
 
 .all_search_bar {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   flex-direction: column;
-  height: auto;
 }
 h1 {
   font-size: 20px;
@@ -94,8 +75,7 @@ h1 {
 }
 .search_bar {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
+
   height: 50px;
 }
 .location_icon {
@@ -105,8 +85,7 @@ h1 {
   background-color: #f2f2f2;
   width: 50px;
   min-width: 50px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-radius: 10px 0 0 10px;
 }
 .type_bar {
   width: 220px;
@@ -124,8 +103,7 @@ h1 {
   color: white;
   font-weight: 700;
   width: 135px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 0 10px 10px 0;
   border: none;
 }
 .search_button:hover {
@@ -143,11 +121,8 @@ h1 {
 
 .filters {
   max-width: 900px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-
+  margin: 25px 0 25px 0;
   display: flex;
-  flex-wrap: nowrap;
   align-items: center;
 }
 .filters_title {
@@ -161,9 +136,7 @@ h1 {
   justify-content: space-around;
 }
 .filter_button {
-  width: auto;
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   border: solid 2px #f2f2f2;
   border-radius: 30px;
@@ -186,7 +159,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 30px;
   min-width: 50px;
   height: 50px;
   background-color: #deebff;
@@ -211,14 +184,12 @@ h1 {
   justify-content: center;
   align-items: center;
   color: #0065fc;
-  margin-right: 15px;
-  margin-left: 5px;
+  margin: 0 15px 0 5px;
   width: 30px;
   height: 30px;
   min-width: 30px;
-  min-height: 30px;
   border: solid 2px #f2f2f2;
-  border-radius: 50%;
+  border-radius: 30px;
 }
 .text_info {
   font-weight: 500;
@@ -227,7 +198,6 @@ h1 {
 /* Deuxième section hébergement*/
 
 .heberg_title {
-  display: flex;
   font-size: 20px;
   margin-left: 25px;
   margin-bottom: 15px;
@@ -278,39 +248,28 @@ h1 {
 .heberg_cards img {
   width: 100%;
   height: 120px;
-  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .card_text {
-  margin-top: 5px;
-  margin-left: 10px;
+  margin: 0 0 5px 10px;
 }
 .star_heberg {
-  margin-left: 10px;
-  margin-bottom: 5px;
+  margin: 0 0 5px 10px;
 }
 .more_button {
   display: flex;
   background-color: #f2f2f2;
   align-items: center;
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 100px;
+  margin: 10px 0 0 30px;
   height: 25px;
   font-weight: 700;
   border: none;
-}
-.more {
   position: absolute;
   bottom: 15px;
 }
 .more_button:hover {
   color: #0065fc;
   cursor: pointer;
-}
-.all_cards_heberg a {
-  width: fit-content;
-  height: fit-content;
 }
 .star_heberg .fa-solid {
   color: #0065fc;
@@ -332,8 +291,7 @@ h1 {
 }
 .popular_main_title {
   font-size: 20px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+  margin: 0 0 10px 20px;
 }
 .all_popular_cards {
   display: flex;
@@ -348,13 +306,8 @@ h1 {
   display: flex;
   width: 100%;
 }
-.img_popular {
-  object-fit: cover;
-}
 .popular_cards img {
-  display: flex;
   border-radius: 15px 0 0 15px;
-  object-fit: cover;
   width: 120px;
   height: 100%;
 }
@@ -375,10 +328,7 @@ h1 {
 }
 .text_popular {
   display: flex;
-  width: 100%;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  margin: 10px 0 15px 10px;
   justify-content: space-between;
   flex-direction: column;
 }
@@ -397,8 +347,7 @@ h1 {
 }
 .activity_marseille_title {
   font-size: 20px;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin: 50px 0 10px 0;
 }
 .all_activity {
   display: flex;
@@ -409,120 +358,50 @@ h1 {
   margin-bottom: 50px;
   height: 500px;
 }
-.title_activity {
+.title_card_activity {
   margin-left: 10px;
   height: 50px;
   display: flex;
   align-items: center;
 }
-.card_activity_1 {
+.cards_activity_all {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  height: 450px;
   width: 300px;
   min-width: 220px;
   border-radius: 15px;
+  box-shadow: #f2f2f2 5px 5px 5px 0;
 }
-.card_activity_1:hover {
+.cards_activity_all:hover {
   box-shadow: #0065fc 5px 5px 5px 0;
 }
-.card_activity_1 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.cards_activity_all img {
   border-radius: 15px 15px 0 0;
+}
+.img_activity_1 {
+  height: 400px;
+}
+.img_activity_2 {
+  height: 150px;
+}
+.card_activity_1 {
+  height: 450px;
 }
 .card_activity_2 {
-  display: flex;
-  flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  width: 300px;
-  min-width: 220px;
   height: 250px;
-  border-radius: 15px;
-}
-.card_activity_2:hover {
-  box-shadow: #0065fc 5px 5px 5px 0;
 }
 .card_activity_2 img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  height: 200px;
 }
 .card_activity_3 {
-  display: flex;
-  flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  width: 300px;
-  min-width: 220px;
   height: 160px;
-  border-radius: 15px;
-}
-.card_activity_3:hover {
-  box-shadow: #0065fc 5px 5px 5px 0;
 }
 .card_activity_3 img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-.card_activity_4 {
-  display: flex;
-  flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  width: 300px;
-  min-width: 220px;
-  height: 450px;
-  border-radius: 15px;
-}
-.card_activity_4:hover {
-  box-shadow: #0065fc 5px 5px 5px 0;
-}
-.card_activity_4 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  height: 110px;
 }
 .card_activity_5 {
-  display: flex;
-  flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  width: 300px;
-  min-width: 220px;
   height: 200px;
-  border-radius: 15px;
-}
-.card_activity_5:hover {
-  box-shadow: #0065fc 5px 5px 5px 0;
-}
-.card_activity_5 img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-}
-.card_activity_6 {
-  display: flex;
-  flex-direction: column;
-  box-shadow: #f2f2f2 5px 5px 5px 0;
-  width: 300px;
-  min-width: 220px;
-  height: 200px;
-  border-radius: 15px;
-}
-.card_activity_6:hover {
-  box-shadow: #0065fc 5px 5px 5px 0;
-}
-.card_activity_6 img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
 }
 .all_activity a {
   height: auto;
@@ -561,7 +440,6 @@ footer {
 }
 .footer_link {
   margin-bottom: 7px;
-  width: fit-content;
 }
 .footer_link:hover {
   color: #0065fc;
@@ -575,22 +453,7 @@ footer {
   }
 }
 @media screen and (max-width: 1315px) {
-  .card_activity_1 {
-    width: 250px;
-  }
-  .card_activity_2 {
-    width: 250px;
-  }
-  .card_activity_3 {
-    width: 250px;
-  }
-  .card_activity_4 {
-    width: 250px;
-  }
-  .card_activity_5 {
-    width: 250px;
-  }
-  .card_activity_6 {
+  .cards_activity_all {
     width: 250px;
   }
   .all_activity a {
@@ -607,40 +470,10 @@ footer {
   .all_activity {
     align-items: center;
   }
-  .card_activity_1 {
+  .cards_activity_all {
     height: 200px;
   }
-  .card_activity_1 img {
-    height: 150px;
-  }
-  .card_activity_2 {
-    height: 200px;
-  }
-  .card_activity_2 img {
-    height: 150px;
-  }
-  .card_activity_3 {
-    height: 200px;
-  }
-  .card_activity_3 img {
-    height: 150px;
-  }
-  .card_activity_4 {
-    height: 200px;
-  }
-  .card_activity_4 img {
-    height: 150px;
-  }
-  .card_activity_5 {
-    height: 200px;
-  }
-  .card_activity_5 img {
-    height: 150px;
-  }
-  .card_activity_6 {
-    height: 200px;
-  }
-  .card_activity_6 img {
+  .cards_activity_all img {
     height: 150px;
   }
 }
@@ -706,44 +539,29 @@ footer {
   main {
     width: 95%;
   }
-  .size_nav {
+  nav {
     height: 130px;
     align-items: center;
     flex-direction: column;
   }
-  .nav_buttons {
+  .nav_buttons_both {
     width: 100%;
   }
 
-  .button_heberg {
+  .button_nav {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 50px;
   }
-  .button_heberg a {
+  .button_nav a {
     width: 100%;
     height: 50px;
     border-bottom: solid 3px #f2f2f2;
   }
-  .button_activites a {
-    width: 100%;
-    height: 50px;
-    border-bottom: solid 3px #f2f2f2;
-  }
-  .button_activites {
-    width: 100%;
-    height: 50px;
-  }
-  .button_heberg a:hover {
+  .button_nav a:hover {
     border-top: none;
     border-bottom: solid 3px #0065fc;
-    color: #0065fc;
-  }
-  .button_activites a:hover {
-    border-top: none;
-    border-bottom: solid 3px #0065fc;
-    color: #0065fc;
   }
 
   /* search bar mobile */
@@ -790,7 +608,7 @@ footer {
     align-items: flex-start;
   }
   .filter_button {
-    margin: 5px;
+    margin: 10px;
   }
   .filter_all_buttons {
     display: flex;
@@ -825,29 +643,9 @@ footer {
     align-content: center;
   }
   .all_activity a {
-    width: 95%;
-  }
-  .card_activity_1 {
     width: 100%;
-    min-width: 0;
   }
-  .card_activity_2 {
-    width: 100%;
-    min-width: 0;
-  }
-  .card_activity_3 {
-    width: 100%;
-    min-width: 0;
-  }
-  .card_activity_4 {
-    width: 100%;
-    min-width: 0;
-  }
-  .card_activity_5 {
-    width: 100%;
-    min-width: 0;
-  }
-  .card_activity_6 {
+  .cards_activity_all {
     width: 100%;
     min-width: 0;
   }
